@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Юрент</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://mapgl.2gis.com/api/js/v1"></script>
+</head>
+<body>
+
+    <div id="map" class="map"></div>
+
+    <div id="welcomeHeader" class="header">
+        <img src="ic_app_launcher_round.png" alt="icon">
+        <span>Приветствую, GREIDO</span>
+    </div>
+
+    <div class="footer">
+        <button id="settingsButton" class="small-button transition-slow" aria-label="Settings">
+            <img src="https://img.icons8.com/?size=100&id=hWd5DljpY8Az&format=png&color=1A1A1A" alt="settings">
+        </button>
+        <button id="scooterInputButton" class="large-button transition-slow" aria-label="Scan QR Code">
+            <img src="https://img.icons8.com/?size=100&id=6ozUksPEPg6G&format=png&color=FFFFFF" alt="QR code">
+        </button>
+        <button id="scooterRideButton" class="small-button transition-slow" aria-label="Locate">
+            <img src="https://img.icons8.com/?size=100&id=9Deeqjb8MjFH&format=png&color=1A1A1A" alt="location">
+        </button>
+    </div>
+
+    <div id="scooterInputMenu" class="popup-menu">
+        <div class="popup-handle"></div>
+        <div class="popup-content centered">
+            <div class="text-content">
+                <h3>Введите номер самоката</h3>
+            </div>
+            <label for="inputScooter"></label><input type="text" id="inputScooter" pattern="\d*" maxlength="6" placeholder="542-729">
+            <div class="setting-item">
+                <button id="getScooterButton" disabled>Этот</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

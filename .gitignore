@@ -1,0 +1,48 @@
+# Исключаем виртуальное окружение
+venv/
+.venv/
+
+# Конфигурационные файлы и переменные окружения
+.env
+*.ini
+*.cfg
+
+# Логи
+logs/
+*.log
+*.out
+*.err
+
+# Файлы кеша Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# База данных (если используется SQLite)
+*.sqlite3
+*.db
+
+# Кэш pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+
+# Файлы, созданные ОС
+.DS_Store
+Thumbs.db
+
+# Docker и контейнерные файлы (если используешь)
+docker-compose.override.yml
+*.dockerfile
+
+# Pytest и тестовые файлы
+.coverage
+pytest_cache/
+htmlcov/
+
+# Jupyter Notebook (если используется)
+.ipynb_checkpoints/
